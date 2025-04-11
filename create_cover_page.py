@@ -2,7 +2,9 @@ from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
 from reportlab.lib import colors
 from reportlab.lib.units import inch  # Import inch for units
+import datetime
 
+# This file only creates the cover page for the report.
 
 def create_cover_page_with_background(pdf_filename, year):
     # Create a canvas object with A4 size
@@ -34,9 +36,3 @@ def create_cover_page_with_background(pdf_filename, year):
     # Finalize the page
     c.showPage()
     c.save()
-
-# Example usage
-pdf_filename = "nba_team_statistics_2024_background_only.pdf"
-year = 2024
-
-create_cover_page_with_background(pdf_filename, year)

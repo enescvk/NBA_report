@@ -72,12 +72,3 @@ def create_df(main_dictionary):
     df = pd.DataFrame(main_dictionary)
 
     return df
-
-
-
-# URL of the NBA teams page
-url = "https://www.nba.com/teams"
-main_dict = scrape_nba_region_and_teams(url)
-data = create_df(main_dict)
-print(data)
-
